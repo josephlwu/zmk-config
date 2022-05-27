@@ -2,11 +2,14 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: Nicell
+    - name: nicell
       url-base: https://github.com/Nicell
   projects:
-    - name: zmk
-      remote: Nicell
+#    - name: zmk
+#      remote: zmkfirmware
+#      revision: main
+    - name: nicell
+      remote: zmk
       revision: shields/sweet16
       import: app/west.yml
   self:
