@@ -9,6 +9,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 
+#define DEFAULT 0
+#define LOWER 1
+#define NUM 2
+
 / {
         keymap {
                 compatible = "zmk,keymap";
@@ -20,10 +24,10 @@
 // | 1 |  2  |  3  | - |
 // | 0 | ENT | LWR | = |
                         bindings = <
-   &kp A &kp B    &kp C &kp D
+   &tog NUM &kp B    &kp C &kp D
    &kp E &kp F    &kp G &kp H
    &kp I &kp J    &kp K &kp L
-   &kp M &kp N    &kp O &kp P
+   &kp M &kp N    &mo 1 &kp P
                         >;
                 };
 
@@ -37,7 +41,21 @@
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
    &none        &none        &none        &none 
    &none        &none        &none        &none 
-   &none        &none        &trans       &bt BT_CLR 
+   &kp 2        &none        &trans       &bt BT_CLR 
+                        >;
+                };
+                
+                num_layer {
+// --------------------------
+// | 7 |  8  |  9  | * |
+// | 4 |  5  |  6  | / |
+// | 1 |  2  |  3  | - |
+// | 0 | ENT | LWR | = |
+                        bindings = <
+   &tog NUM &kp N8    &kp N9 &kp ASTERISK
+   &kp N4 &kp N5    &kp N6 &kp SLASH
+   &kp N1 &kp N2    &kp N3 &kp MINUS
+   &kp N0 &kp ENTER &mo 1  &kp EQUAL
                         >;
                 };
         };
