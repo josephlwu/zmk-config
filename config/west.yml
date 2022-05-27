@@ -8,8 +8,8 @@ manifest:
 #    - name: zmk
 #      remote: zmkfirmware
 #      revision: main
-    - name: nicell
-      remote: zmk
+    - name: zmk
+      remote: nicell
       revision: shields/sweet16
       import: app/west.yml
   self:
