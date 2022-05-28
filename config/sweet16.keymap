@@ -19,15 +19,15 @@
 
                 default_layer {
 // --------------------------
-// | DEF |  NUM  |  FUN  | BLU |
+// | DEF   |  NUM  | FUN  | BLU  |
 // | Erase | Curve | Rot  | Pen  |
 // | NewF  |  <    |   >  | Zoom |
-// |       |       |      | Pan  |
+// | Undo  | Redo  | ESC  | Pan  |
                         bindings = <
-   &to DEF  &to NUM  &to FUN  &mo BLU
-   &kp E    &kp Q    &kp R    &kp P
-   &kp LS(C)    &kp LC(COMMA)    &kp LC(DOT)    &kp Z
-   &kp M    &kp N    &kp O    &kp SPACE
+   &to DEF   &to NUM       &to FUN     &mo BLU
+   &kp E     &kp Q         &kp R       &kp P
+   &kp LS(C) &kp LC(COMMA) &kp LC(DOT) &kp Z
+   &kp LC(Z) &kp LC(Y)     &kp ESC     &kp SPACE
                         >;
                 };
 
@@ -52,7 +52,7 @@
 // | 1 |  2  |  3  | - |
 // | 0 | ENT | LWR | = |
                         bindings = <
-   &to DEF  &to NUM   &to FUN    &trans
+   &to DEF  &to NUM   &to FUN    &mo BLU
    &kp N4   &kp N5    &kp N6     &kp SLASH
    &kp N1   &kp N2    &kp N3     &kp MINUS
    &kp N0   &kp ENTER &kp KP_DOT &kp EQUAL
@@ -66,7 +66,7 @@
 // | F17 |  F18  |  F19  | F20 |
 // | F21 |  F22  |  F23  | F24 |
                         bindings = <
-   &to DEF  &to NUM  &to FUN   &trans
+   &to DEF  &to NUM  &to FUN   &mo BLU
    &kp F13  &kp F14  &kp F15   &kp F16
    &kp F17  &kp F18  &kp F19   &kp F20
    &kp F21  &kp F22  &kp F23   &kp F24
