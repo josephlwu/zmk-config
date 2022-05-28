@@ -20,14 +20,14 @@
                 default_layer {
 // --------------------------
 // | DEF |  NUM  |  FUN  | BLU |
-// | 4 |  5  |  6  | / |
-// | 1 |  2  |  3  | - |
-// | 0 | ENT | LWR | = |
+// | Erase | Curve | Rot  | Pen  |
+// | NewF  |  <    |   >  | Zoom |
+// |       |       |      | Pan  |
                         bindings = <
    &to DEF  &to NUM  &to FUN  &mo BLU
-   &kp E    &kp F    &kp G    &kp H
-   &kp I    &kp J    &kp K    &kp L
-   &kp M    &kp N    &kp O    &kp P
+   &kp E    &kp Q    &kp R    &kp P
+   &kp LS(C)    &kp LC(COMMA)    &kp LC(DOT)    &kp Z
+   &kp M    &kp N    &kp O    &kp SPACE
                         >;
                 };
 
@@ -59,7 +59,7 @@
                         >;
                 };
                 
-                 func_layer {
+                func_layer {
 // --------------------------
 // | DEF |  NUM  |  FUN  | BLU |
 // | F13 |  F14  |  F15  | F16 |
