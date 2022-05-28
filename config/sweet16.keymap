@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define DEFAULT 0
-#define LOWER 1
+#define BT 1
 #define NUM 2
 
 / {
@@ -24,24 +24,24 @@
 // | 1 |  2  |  3  | - |
 // | 0 | ENT | LWR | = |
                         bindings = <
-   &tog NUM &kp B    &kp C &kp D
+   &tog DEFAULT &tog NUM    &kp C &mo BT
    &kp E &kp F    &kp G &kp H
    &kp I &kp J    &kp K &kp L
    &kp M &kp N    &mo 1 &kp P
                         >;
                 };
 
-                lower_layer {
+                bt_layer {
 // ------------------------
 // | BT1 | BT2 | BT3 | BT4 |
 // |     |     |     |     |
 // |     |     |     |     |
 // |     |     |     |BTCLR|
                         bindings = <
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
+   &none        &none        &none        &trans
+   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 
    &none        &none        &none        &none 
-   &none        &none        &none        &none 
-   &kp 2        &none        &trans       &bt BT_CLR 
+   &kp 2        &none        &none        &bt BT_CLR 
                         >;
                 };
                 
