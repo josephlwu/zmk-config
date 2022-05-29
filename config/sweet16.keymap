@@ -48,14 +48,14 @@
                 num_layer {
 // --------------------------
 // | DEF |  NUM  |  FUN  | BLU |
-// | 4 |  5  |  6  | / |
-// | 1 |  2  |  3  | - |
-// | 0 | ENT | LWR | = |
+// | 7 | 8  | 9  | /     |
+// | 4 | 5  | 6  | -     |
+// | 1 | 2  | 3  | ENTER |
                         bindings = <
-   &to DEF  &to NUM   &to FUN    &mo BLU
-   &kp N4   &kp N5    &kp N6     &kp SLASH
-   &kp N1   &kp N2    &kp N3     &kp MINUS
-   &kp N0   &kp ENTER &kp KP_DOT &kp EQUAL
+   &to DEF  &to NUM  &to FUN  &mo BLU
+   &kp N7   &kp N8   &kp N9   &kp SLASH
+   &kp N4   &kp N5   &kp N6   &kp MINUS
+   &kp N1   &kp N2   &kp N3   &kp ENTER
                         >;
                 };
                 
