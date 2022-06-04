@@ -47,15 +47,15 @@
                 
                 num_layer {
 // --------------------------
-// | DEF |  NUM  |  FUN  | BLU |
-// | 7 | 8  | 9  | /     |
-// | 4 | 5  | 6  | -     |
-// | 1 | 2  | 3  | ENTER |
+// | DEF |  NUM | FUN  | BLU |
+// | Z   | SHIFT| A    | /   |
+// | X   | S    | UP   | ESC |
+// | C   | LEFT | DOWN | RIGHT |
                         bindings = <
-   &to DEF  &to NUM  &to FUN  &mo BLU
-   &kp N7   &kp N8   &kp N9   &kp SLASH
-   &kp N4   &kp N5   &kp N6   &kp MINUS
-   &kp N1   &kp N2   &kp N3   &kp ENTER
+   &to DEF &to NUM   &to FUN  &mo BLU
+   &kp Z   &kp LSHFT &kp A    &kp SLASH
+   &kp X   &kp S     &kp UP   &kp ESC
+   &kp C   &kp LEFT  &kp DOWN &kp RIGHT
                         >;
                 };
                 
